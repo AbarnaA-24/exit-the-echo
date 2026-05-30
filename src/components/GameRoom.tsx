@@ -46,7 +46,6 @@ const GameRoom: React.FC<GameRoomProps> = ({ onContinue }) => {
   // Generate non-overlapping positions
   const generateNonOverlappingPositions = (count: number): FakeNewsItem[] => {
     const items: FakeNewsItem[] = [];
-    const minDistance = 15; // Minimum distance between items
     
     for (let i = 0; i < count; i++) {
       let attempts = 0;
@@ -130,8 +129,8 @@ const GameRoom: React.FC<GameRoomProps> = ({ onContinue }) => {
       clearTimeout(timer3);
       clearTimeout(timer4);
     };
-  }, []);
-
+// eslint-disable-next-line react-hooks/exhaustive-deps
+}, []);
   const startNewsBombardment = () => {
     const newItems = generateNonOverlappingPositions(12); // Reduced from 15 to prevent overcrowding
     setFakeNewsItems(newItems);
