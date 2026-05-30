@@ -46,7 +46,6 @@ const GameRoom: React.FC<GameRoomProps> = ({ onContinue }) => {
   // Generate non-overlapping positions
   const generateNonOverlappingPositions = (count: number): FakeNewsItem[] => {
     const items: FakeNewsItem[] = [];
-    
     for (let i = 0; i < count; i++) {
       let attempts = 0;
       let newItem: FakeNewsItem | null = null;
