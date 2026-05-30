@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { GameState } from '../App';
 import Level1FakeFeed from './Level1FakeFeed';
 import Level2BotArmy from './Level2BotArmy';

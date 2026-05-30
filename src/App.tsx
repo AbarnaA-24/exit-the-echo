@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import IntroAnimation from './components/IntroAnimation';
 import GameRoom from './components/GameRoom';
 import IntroScreen from './components/IntroScreen';
